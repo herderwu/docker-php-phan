@@ -24,4 +24,5 @@ RUN git clone https://github.com/etsy/phan.git \
 
 ADD run.sh run.sh
 RUN chmod +x run.sh
+COPY config.php /phan/.phan/config.php
 CMD ["./run.sh"]
