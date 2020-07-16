@@ -83,6 +83,15 @@ return [
     // If this white-list is non-empty, only issues within the list
     // will be emitted by Phan.
     'whitelist_issue_types' => [
-        // 'PhanAccessMethodPrivate',
+        'PhanAccessMethodPrivate',
+        'PhanAccessMethodProtected',
+        'PhanUndeclaredFunction',
+        'PhanUndeclaredClassMethod',
+    ],
+    'exclude_analysis_directory_list' => [
+        'vendor/',
+        'tests/',
+        'public/',
+        'Modules/',
     ],
 ];
